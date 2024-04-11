@@ -1,0 +1,29 @@
+(env
+ (dev
+  (flags
+   (:standard -w -50 -w -32 -w -27))))
+
+(executables
+ (names 1_non_deterministic)
+ (modules 1_non_deterministic)
+ (libraries eio eio_main))
+
+(executables
+ (names 2_semaphore)
+ (modules 2_semaphore)
+ (libraries eio eio_main))
+
+(executables
+ (names 3_sema_signal)
+ (modules 3_sema_signal)
+ (libraries eio eio_main))
+
+(executables
+ (names 3_3_rendezvous)
+ (modules 3_3_rendezvous)
+ (libraries eio eio_main))
+
+(executables
+ (names semaphore_for_mutual_exclusion)
+ (modules semaphore_for_mutual_exclusion)
+ (libraries eio eio_main))
