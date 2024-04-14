@@ -1,7 +1,7 @@
 (env
  (dev
   (flags
-   (:standard -w -50 -w -32 -w -27))))
+   (:standard -w -50 -w -26 -w -32 -w -27))))
 
 (executables
  (names 1_non_deterministic)
@@ -27,3 +27,28 @@
  (names semaphore_for_mutual_exclusion)
  (modules semaphore_for_mutual_exclusion)
  (libraries eio eio_main))
+
+(executables
+ (names 3_4_mutex)
+ (modules 3_4_mutex)
+ (libraries eio eio_main))
+
+(executables
+ (names 3_6_barrier)
+ (modules 3_6_barrier)
+ (libraries eio eio_main))
+
+(executables
+ (names 3_6_reusable_barrier)
+ (modules 3_6_reusable_barrier)
+ (libraries eio eio_main))
+
+(executables
+ (names 3_8_queue)
+ (modules 3_8_queue)
+ (libraries eio eio_main domainslib))
+
+(executables
+ (names 3_8_queue_exclusive)
+ (modules 3_8_queue_exclusive)
+ (libraries eio eio_main domainslib))
