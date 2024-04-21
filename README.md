@@ -41,3 +41,14 @@
   - it can be interpreted as queue
     - Acquire == Push
     - Release == Pop
+  
+## Chapter 4:
+- Producer & Consumer
+  - any time you wait for a semaphore while holding a mutex, there is a danger of deadlock
+  - for best performances: release mutex before signalling
+  - avoid deadlock, check availability before getting the mutex
+- Reader & Writer Problems:
+  - Any number of readers can be in the critical section simultaneously
+  - Writers must have exclusive access to the critical section
+  - categorical mutual exclusion
+    - A thread in a particular category in the critical section excludes other categories

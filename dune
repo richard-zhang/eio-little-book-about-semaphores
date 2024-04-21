@@ -52,3 +52,13 @@
  (names 3_8_queue_exclusive)
  (modules 3_8_queue_exclusive)
  (libraries eio eio_main domainslib))
+
+(executables
+ (names 4_1_producer_consumer)
+ (modules 4_1_producer_consumer)
+ (libraries eio eio_main domainslib))
+
+(executables
+ (names 4_1_finite_buffer)
+ (modules 4_1_finite_buffer)
+ (libraries eio eio_main domainslib))
